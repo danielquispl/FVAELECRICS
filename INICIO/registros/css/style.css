@@ -1,0 +1,205 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../img/fondo_ladingg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.logo img{
+    display: grid;
+    width: 20%;
+    margin-top: 1%;
+}
+.registro{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px 10px 10px;
+    margin: 5px 0px 5px 5px;
+}
+.registro:hover .registrate{
+    letter-spacing: 10px;
+    transition: all 600ms ease;
+}
+.registro h1{
+    letter-spacing: 7px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+
+}
+.registro h4{
+    letter-spacing: 4px;
+    font-size: medium ;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+.formulario{
+    padding: 30px 30px 30px 30px;  
+    background: rgba(255, 255, 255, .2); 
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .8);
+
+}
+.formulario label{
+    transition: all 300ms ease;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.formulario:hover label{
+    letter-spacing: 5px;
+}
+.rectangulo{
+    margin-bottom: 18px;
+    margin-top: 8px;
+    width: 90%;
+    margin-left: 5%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    border-color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: all 300ms ease;
+    border: none;
+    cursor: pointer;
+}
+.rectangulo:hover{
+    box-shadow: inset  0px -1px 3px 1px  rgb(49, 49, 49);
+    box-shadow:  -3px 3px 2px 1px  rgb(0, 0, 0);
+    font-size: 14px;
+    margin-left: 6%;
+}
+.btn{
+    border-radius: 20px;
+    margin: 2px;
+    padding: 7px 17px 7px 17px;
+    background-color: #2F2F2F;
+    color: white;
+    border-color: #000000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 3px 5px 4px rgb(60, 60, 60);
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 2px rgb(22, 22, 22);
+    transition: all 200ms ease;
+}
+
+.btn:hover{
+    box-shadow: inset 1px 2px 5px 1px  rgb(0, 0, 0);
+}
+
+.btn_3{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 25px 8px 25px;
+    background-color: #FD9B09;
+    font-size: 15px;
+    letter-spacing: 0px;
+    box-shadow:  0px 7px 10px 1px  rgb(1, 1, 1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    cursor: pointer;
+    transition: all 300ms ease;
+    border: solid 2px rgb(43, 43, 43);
+}
+.btn_3:hover{
+    box-shadow: inset 1px 2px 5px 1px  rgb(103, 50, 1);
+}
+.botones{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.botones-contenedor{
+    display: flex;
+    justify-content: center;
+}
+.fvaelectrics-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 0px;
+}
+.fvaelectrics{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: rgba(0, 0, 0, 0.533); 
+    padding: 28px 70px 25px 30px;
+    transition: all 600ms ease;
+}
+.fvaelectrics:hover h1 {
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+.fvaelectrics h3{
+    padding-top: 15px;
+}
+.fvaelectrics h1{
+    letter-spacing: 2px;
+    transition: all 300ms ease;
+}
+.fva{
+    text-align: end;
+    margin-top: 10px;
+}
+.todo{
+    display: grid;
+    margin: 1px 0px;
+    grid-template-areas: 
+    "registro fvaelectrics-contenedor";
+    justify-content: center;
+
+}
+.contenedor{
+    width: 100%;    
+    display: grid;
+}
+@media (max-width: 740px){
+    .todo{
+        display: grid;
+        grid-template-areas: 
+        "fvaelecttrics-contenedor"
+        "registro";
+        margin: 3px 40px 3px 40px;
+    } 
+    .botones-contenedor{
+        flex-direction: row;
+    }
+    .registro{
+        padding: 10px 10px 10px 10px;
+        margin: 5px 5px 5px 5px;
+    }
+    .fvaelectrics-contenedor{
+        margin: 5px 5px 5px 5px;
+    }
+    .btn{
+        margin: 3px;
+        width: 100%;
+        font-size: 13px;
+        padding: 8px 5px 8px 5px;
+    }   
+   .logo img{
+    width: 40%;
+   }
+}

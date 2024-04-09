@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 body{
     background-image: url(IMG/fondooo.jpg);
     background-repeat: no-repeat;
@@ -14,7 +17,7 @@ header{
 }
 
 .titulo_responsive{  
-    height: 50px;
+    height: 40px;
     padding-bottom: 15px;
     font-size: 20px;
     display: flex;
@@ -25,14 +28,15 @@ header{
 .titulo{
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 7.5px;
+    font-size: 20px;
     background-color: rgb(250, 165, 38);
 }
 .titulo_responsive .titulo1{
     margin-top: 0;
     margin-bottom: 0;
-    border-top: 50px solid transparent;
-    border-left: 50px solid rgb(250, 165, 38);
+    border-top: 40px solid transparent;
+    border-left: 40px solid rgb(250, 165, 38);
 }
 .fvalogo{
     border-radius: 10px;
@@ -42,28 +46,29 @@ header{
 }
 .head_2{
     display: flex;
+
 }
 .head_2 a{
     text-decoration: none;
 }
 .registrar{
     margin-right: 15px;
-    background-color: rgb(250, 165, 38);
+    background-color: rgba(44, 44, 44, 0.842);
     padding: 10px 10px;
     border-radius: 10px;
     color: white;
 }
 .registrar:hover{
-    background-color: rgb(126, 118, 118);
-    color: black;
+    background-color: rgb(250, 165, 38);
+    color: rgb(255, 255, 255);
     transition: all 0.5s;
 }
 .head a{
     text-decoration: none; 
 }
-.iniciar_sesion p{
+.head_2 .iniciar_sesion .Siguenos{
     font-weight: 700;
-    font-size: 20px; 
+    font-size: 50px; 
 }
 .redes{
     width: 35px;
@@ -78,9 +83,19 @@ header{
 }
 /* secciones*/
 .secciones{
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    position: fixed;
     display: flex;
     background: rgb(250, 165, 38);
     justify-content: space-between;
+}
+.secciones.active{
+    top: 0;
+    left: 0;
+    background-color: rgb(250, 165, 38);
+    padding: 0;
 }
 .descrip{
     display: flex;
@@ -198,12 +213,13 @@ header{
     animation:slide 20s infinite alternate ease-in-out;    
 }
 .contenido .contenido_2 ul li{
+    padding-top: 20px;
     width: 100%;
     list-style: none;
-    position: relative;
 }
 .contenido .contenido_2 img{
-    width: 100%;
+    width: 90%;
+    padding: 5%;
 }
 @keyframes slide{
     0%{ margin-left: 0;}
@@ -240,6 +256,100 @@ header{
     border-radius: 30px;
     font-size: 20px;
     font-weight: 550;
+}
+/*CATEGORIA*/
+.categoria{
+margin-left: 12.5%;
+    text-align: center;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    
+
+    .herramienta{
+        text-align: center;
+        .herramienta-img{
+            
+            width: 220px;
+        }
+
+        .link-h{
+            text-decoration: none;
+            color: black;
+            h2{
+                margin-top: -3.5px;
+                background-color: rgb(73, 73, 73);
+                width: 200px;
+                height: 50px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+@media(max-width:850px){
+    .categoria{
+    margin-left: 7%;
+    .herramienta{
+        margin-left: 10px;
+    }
+    }
+
+}
+
+@media(max-width:760px){
+    .categoria{
+    margin-left: 3%;
+    .herramienta{
+        margin-left: 10px;
+    }
+    }
+
+}
+@media(max-width:720px){
+    .categoria{
+    margin-left: 1%;
+    .herramienta{
+        margin-left: 10px;
+    }
+    }
+
+}
+@media(max-width:700px){
+    .categoria{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 30%;
+    
+    }
+
+}
+/*css novedades*/
+.titulonovedades{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.712);
+
+    h3{
+        padding-top: 15px;
+        font-weight: 900;
+    }
+    p{
+        margin-top: -15px;
+        padding-bottom: 15px;
+    }
+}
+.video-general{
+    display: flex;
+    .novedades{
+        display: flex;
+        flex-direction: column;
+        .p-texto{
+            display: none;
+        }
+    }
+
+    
 }
 /*css de pie de pagina*/
 .pie_pagina .envio{
@@ -312,7 +422,7 @@ header{
     margin-left: -3px;
 }
 /*menu hambuegesa*/
-@media(max-width:1100px){
+@media(max-width:1000px){
     .secciones_pie{
         display: flex;
         flex-direction: column;
@@ -332,7 +442,6 @@ header{
     .pie_pagina .secciones_pie .medio_derecho div{
         width: 50%;
     }
-
     .secciones{
         height: 60px;
     }
@@ -344,7 +453,7 @@ header{
         padding-top: 20px;
         width: 100%;
         position: absolute;
-        margin-top: 430px;
+        margin-top: 290px;
         background-color: rgb(250, 165, 38);
         display: none;
     }
@@ -359,6 +468,9 @@ header{
         font-size: 25px;
     }
 
+    .titulo_responsive .titulo{
+        padding-top: 10px;
+    }
 }
 
 @media(max-width:920px){
@@ -368,22 +480,26 @@ header{
         text-align: center;
     }
     .head_2{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
         width: 100%;
-        padding-bottom: 15px;
     }
-    .registrar{ 
-        padding: 10px 5%;
-        font-size: 25px;
+    .head_2 .div-registro{
+        width: 50%;
+    }
+    .head_2 .iniciar-sesion{
+        width: 50%;
+    }
+    .head_2 .registrar2{
+        margin-left: 40%;
+        padding: 10px 40px;
+    }
+    .head_2 .iniciar-sesion .registrar1{
+        margin-right: 20%;
+        padding: 10px 40px;
+    }
+    .head_2 .iniciar-sesion .Siguenos, .redes{
+        display: none;
     }
 
-    .registrar1{
-        font-size: 23px;
-        padding: 12px 5%;
-    }
     .titulo{
         margin-bottom: 0;
         margin-top: 0;
@@ -401,12 +517,13 @@ header{
     .fvalogo{
         width: 430px;
     }
-    .titulo{
+    .titulo_responsive .titulo{
         font-size: 15px;
         width: 100%;
         text-align: center;
         padding: 10px 30px;
-        margin-bottom: 15px;
+        margin-top: -5 px;
+        margin-bottom: 10px;
     }
     .titulo_responsive .titulo1{
         display: none;
@@ -427,6 +544,17 @@ header{
     .pie_pagina .secciones_pie .medio_derecho div{
         width: 100%;
         padding:15px 0;
+    }
+    .head_2 .registrar2{
+        margin-left: 35%;
+        padding: 10px 15px;
+    }
+    .head_2 .iniciar-sesion .registrar1{
+        margin-right: 15%;
+        padding: 10px 15px;
+    }
+    .icono1{
+        margin-right: 15px;
     }
 }
 /*mediaquery*/
