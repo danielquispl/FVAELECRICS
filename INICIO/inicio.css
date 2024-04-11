@@ -12,12 +12,13 @@ body{
 }
 /* encabezado*/
 header{
+    margin-bottom: 20px;
     display:flex;
     justify-content: space-between ;
 }
 
 .titulo_responsive{  
-    height: 40px;
+    height: 50px;
     padding-bottom: 15px;
     font-size: 20px;
     display: flex;
@@ -28,21 +29,19 @@ header{
 .titulo{
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 7.5px;
-    font-size: 20px;
+    padding-top: 10px;
     background-color: rgb(250, 165, 38);
 }
 .titulo_responsive .titulo1{
     margin-top: 0;
     margin-bottom: 0;
-    border-top: 40px solid transparent;
-    border-left: 40px solid rgb(250, 165, 38);
+    border-top: 50px solid transparent;
+    border-left: 50px solid rgb(250, 165, 38);
 }
 .fvalogo{
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.596);
-    width: 550px;
-    height: auto;
+    width: 500px;
 }
 .head_2{
     display: flex;
@@ -66,10 +65,6 @@ header{
 .head a{
     text-decoration: none; 
 }
-.head_2 .iniciar_sesion .Siguenos{
-    font-weight: 700;
-    font-size: 50px; 
-}
 .redes{
     width: 35px;
     height: auto;
@@ -77,25 +72,24 @@ header{
     margin-top: -50px;
 }
 .iconofva{
-    
     width: 70px;
     height: auto;
 }
 /* secciones*/
 .secciones{
-    padding: 0px;
     width: 100%;
-    position: relative;
-    position: fixed;
     display: flex;
     background: rgb(250, 165, 38);
     justify-content: space-between;
+    height: 70px;
+    position: fixed;
 }
 .secciones.active{
     top: 0;
     left: 0;
     background-color: rgb(250, 165, 38);
     padding: 0;
+
 }
 .descrip{
     display: flex;
@@ -104,8 +98,7 @@ header{
 .icono1{
     font-size: 35px;
     color: white;
-    padding: 3px;
-    margin-right: 50px;
+    padding: 3px 35px;
 }
 .icono{
     font-size: 25px;
@@ -148,7 +141,7 @@ header{
     text-decoration: none;
     list-style: none;
     font-size: 25px;
-    padding: 13px 10px;
+    padding: 30px 10px;
     color: #ffffff;
     display: block;
 }
@@ -296,29 +289,11 @@ margin-left: 12.5%;
 
 }
 
-@media(max-width:760px){
-    .categoria{
-    margin-left: 3%;
-    .herramienta{
-        margin-left: 10px;
-    }
-    }
-
-}
-@media(max-width:720px){
-    .categoria{
-    margin-left: 1%;
-    .herramienta{
-        margin-left: 10px;
-    }
-    }
-
-}
-@media(max-width:700px){
+@media(max-width:800px){
     .categoria{
     flex-direction: column;
-    width: 100%;
-    margin-left: 30%;
+    align-items: center;
+    margin-left: 10%;
     
     }
 
@@ -329,6 +304,7 @@ margin-left: 12.5%;
     width: 100%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.712);
+
 
     h3{
         padding-top: 15px;
@@ -341,15 +317,47 @@ margin-left: 12.5%;
 }
 .video-general{
     display: flex;
-    .novedades{
-        display: flex;
-        flex-direction: column;
-        .p-texto{
-            display: none;
+    width: 85%;
+    margin: 2%;
+    margin-left: 10%;
+    .video-descripcion{
+        width: 33%;
+        .novedades{
+
+            .p-texto{
+                display: none;
+        }
+        }
+    }   
+}
+.video-general .video-descripcion .novedades .new {
+    width: 250px;
+
+    .title{
+        background-color: rgba(0, 0, 0, 0.795);
+        color: white;
+        margin-top: -3px;
+        width: 240px;
+        padding: 5px;
+        text-align: center;
+    }
+}
+@media(max-width:920px){
+    .video-general{
+        margin-left: 3%;
+        .video-descripcion{
+            margin-right: 5%;
         }
     }
 
-    
+}
+@media(max-width:800px){
+    .video-general{
+        flex-direction: column;
+        align-items: center;
+        margin-left: -5%;
+    }
+
 }
 /*css de pie de pagina*/
 .pie_pagina .envio{
@@ -421,7 +429,7 @@ margin-left: 12.5%;
 .secciones_pie .seccion_contacto h3{
     margin-left: -3px;
 }
-/*menu hambuegesa*/
+/*mediaquery*/
 @media(max-width:1000px){
     .secciones_pie{
         display: flex;
@@ -442,6 +450,19 @@ margin-left: 12.5%;
     .pie_pagina .secciones_pie .medio_derecho div{
         width: 50%;
     }
+    .nadvar a{ 
+        font-size: 20px;
+        padding:16px;
+    }
+    .name{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: 10px;
+            font-size: 25px;
+            font-weight:650;
+        }
+    }
     .secciones{
         height: 60px;
     }
@@ -450,7 +471,6 @@ margin-left: 12.5%;
         margin-left: 15px;
     }
     .menu .nadvar{
-        padding-top: 20px;
         width: 100%;
         position: absolute;
         margin-top: 290px;
@@ -554,7 +574,10 @@ margin-left: 12.5%;
         padding: 10px 15px;
     }
     .icono1{
-        margin-right: 15px;
+        padding-right: 5px;
+    }
+    .icono2{
+        margin-right:-23px;
     }
 }
-/*mediaquery*/
+
