@@ -1,0 +1,232 @@
+.titulonovedades{
+     h1{
+        padding: 15px 0;
+        font-weight: 1000;
+     }
+     h2{
+        padding: 15px 0;
+        font-weight: 1000;
+     }
+}
+.imgservicios{
+     img{
+        width: 100%;
+     }
+}
+.ayuda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .concepto_fva{
+        width: 70%;
+        background-color: white;
+        
+    }
+}
+.comunicacion{
+    display: flex;   
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 20px 0;
+    margin-bottom: 40px;
+    .seguro{
+        width: 50%;
+        display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    .comunicar {
+        a{
+            text-decoration: none;
+            i{
+                font-size: 80px;
+                background-color: rgb(36, 36, 36) ;
+                color: rgba(255, 255, 255, 0.815);
+                padding: 30px;
+                border-radius: 50%;
+                box-shadow: 10px 25px 25px  #000;
+
+            }
+            i:hover{
+                background-color: white;
+                color: rgb(36, 36, 36) ;
+                transition: all .5s ease;
+            }
+        } 
+        p{
+            margin-top: -18px;
+            
+        }  
+    }
+    }
+    .seguro1{
+        margin-right: -125px;
+    }
+    .seguro2{
+        margin-left: -125px;
+    }
+    
+}
+.comunicacion2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(73, 72, 72, 0.822);
+
+    .seguros{
+        display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    }
+
+    .comunicar {
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            i{
+                font-size: 30px;
+                color: black;
+                padding-left: 5px;
+            }
+            i:hover{
+                color: rgb(36, 36, 36) ;
+                transition: all .5s ease;
+            }
+        } 
+        p{
+        color: white;
+        }  
+    }
+}
+/* css de la suscripcion*/
+.suscripcion{
+    display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: rgba(39, 39, 39, 0.945);
+     width: 100%;
+
+     .a1{
+        width: 20%;
+        height: 7rem;
+        border-right: 2px solid white;
+        img{
+            width: 90%;
+            height: 35px;
+            padding-top: 35px;
+        }
+     }
+     .a2{
+        width: 35%;
+        h3{
+            color: white;
+            margin-left: -30px;
+        }
+        
+     }
+     .a3{
+        .suscribete{
+            margin-bottom: 5px;
+            #suscribir{
+                border: 0;
+                padding: 10px 15px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                margin-right: 0;
+            }
+            #enviar{
+                margin-left: -5px;
+                background-color: rgb(250, 165, 38);
+                border: 0;
+                padding: 10px 15px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+        }
+        .terminos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 12px;
+            }
+        }
+     }
+}
+.pie_pagina .envio{
+    width: 100%;
+    height: 0.1px;
+}
+/*mediaquery*/
+@media(max-width:1000px){
+    .comunicacion{
+        flex-direction: column;
+        justify-content: space-around;
+        .seguro{
+            width: 100%;
+        .comunicar {
+            p{
+                margin-top: -18px;
+                
+            }  
+        }
+        }
+        .seguro1{
+            margin-right: 0px;
+        }
+        .seguro2{
+            margin-left: 0px;
+        }
+    }
+
+    .comunicacion2{
+        flex-direction: column;
+        .seguros{
+        width: 100%;
+
+        .comunicar{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+            a{
+                margin-bottom: -10px;
+            }
+        }
+        }
+    
+    }
+
+    .suscripcion{
+        display: flex;
+         justify-content: space-around;
+         align-items: center;
+         flex-direction: column;
+         text-align: center;
+         background-color: rgba(39, 39, 39, 0.945);
+         width: 100%;
+         padding-bottom: 15px;
+    
+         .a1{
+            display: none;
+         }
+         .a2{
+            width: 60%;
+            h3{
+                color: white;
+                margin-left: -30px;
+            }
+            
+         }
+    }
+}
+
+        
+    
